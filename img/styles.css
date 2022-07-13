@@ -1,0 +1,266 @@
+/* Styles.CSS */
+
+/* FONT */
+
+/* Font declaration */
+@font-face {
+  font-family: msdos;
+  src: url("fonts/DOS.ttf");
+}
+
+
+
+
+
+
+/* BACKGROUND */
+
+/* Background with ocean */
+body{
+	background-image: url("img/awesomebackground.png");
+	background-repeat: repeat-x;
+	background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+/* LINKS */
+
+
+/* Link Style, no underline and no colors */
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+a:active {text-decoration: none;}
+
+
+/* Settings for links on header and footer. Encloses buttons from .headerlink */
+.linkbar{
+	margin: 32px;
+	font-family: msdos;
+	font-size: 1.5em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	max-width: 1024px;
+	margin: auto;
+	margin-bottom: 32px;
+	//padding-left: 32px;
+	//padding-right: 32px;
+}
+
+
+/* Links in the header and footer. Encloses a grid of buttons inside links. */
+.navlink{
+	color: #1f1f1f;
+	background-color: #c2c1c6;
+	background-image: linear-gradient(#f5cd8d, #fae5c0, #f5cd8d);
+	border-color: #7a6441;
+	border-style: outset;
+	padding: 8px;
+	border-width: 3px;
+	width: 150px;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: 16 8 auto;
+}
+
+/* Hover animation color change for links in the header and footer*/
+.navlink:hover{
+
+	color: #444444;
+	background-color: #fae5c0;
+	background-image: linear-gradient(#fae5c0, #f5cd8d, #fae5c0);
+	border-color: #ac8e5e;
+}
+
+
+/* Link to item purchase page */
+.buylink{
+	font-family: msdos; 
+	color: #1f1f1f;
+	background-color: #70c498;
+	border-color: #699e7c;
+	border-style: outset;
+	padding: 8px;
+	border-width: 3px;
+	margin: auto 80px 40px;
+	width: 150px;
+	vertical-align: text-top;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* Hover animation color change for links to item purchase page*/
+.buylink:hover{
+	color: #1f1f1f;
+	background-color: #f1cd4c;
+	border-color: #b18730;
+}
+
+
+
+
+
+
+/* HEADER */
+
+/* Header and its properties*/
+.header{
+	display: flex;
+	flex-direction: column;
+	margin: 25 auto 25;
+	max-width: 1100px;
+	background-color: #c2c2c7;
+	border-color: #699e7c;
+	border-style: outset;
+	border-image-source: url("img/border_grey.png");
+	border-image-width: 64px;
+	border-image-slice: 64;
+	border-image-repeat: repeat;
+}
+
+
+/* Header banner */
+.header .showcase{
+	display: flex;
+	justify-content: center;
+}
+/* Banner image properties*/
+.header .showcase img{
+	max-width: 1500px;
+	overflow: hidden;
+	padding: 7 7 7 7;
+}
+
+
+		
+
+
+/*MAIN PAGE BODY */
+
+/* Main page box with a gold border */
+
+.centerblock{
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 25 px;
+	max-width: 1100px;
+	background-color: #fdf6e3;
+	border-color: #699e7c;
+	border-style: outset;
+		border-image-source: url("img/border_gold.png");
+		border-image-width: 64px;
+		border-image-slice: 64;
+		 border-image-repeat: repeat;
+}
+
+
+/* Description text in main page box*/
+.desc{
+	font-family: msdos;
+	font-size: 1.2 em;
+	text-align: left;
+	margin: auto;
+	color: #596e75;
+	max-width: 80%;
+	padding: 24px;
+}
+
+
+
+
+
+/* FOOTER */
+
+/*Footer with grey border*/
+.footer{
+	font-size: 1em;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	max-width: 1100px;
+	background-color: #c2c2c7;
+	border-color: #699e7c;
+	border-style: outset;
+		border-image-source: url("img/border_grey.png");
+		border-image-width: 64px;
+		border-image-slice: 64;
+		border-image-repeat: repeat;
+		
+}
+
+
+
+
+/* STORE GRID */
+
+/* Store Items Grid  */
+.grid-container {
+	font-family: msdos;
+	font-size: 0.9em;
+	display: grid;
+	row-gap: 50px;
+	column-gap: 30px;
+	grid-template-columns: 400px 400px;
+	justify-content: center;
+	padding: 50px;
+}
+
+
+/* Store Item within grid */
+.grid-item {
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	background-color: #fdf6e3;
+	text-align: left;
+	border-style: outset;
+		border-image-source: url("img/border_gold.png");
+		border-image-width: 64px;
+		border-image-slice: 64;
+		border-image-repeat: repeat; 
+}
+
+/* Class to align item photos in center of grid item*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+/* Title of item under photo within grid item*/
+.item-title{
+	text-align: center;
+	font-size: 1.75em;
+	font-weigh: 500;
+	margin: 20px auto 20px; 
+}
+
+
+
+
+
+
+
+
+
+
+
